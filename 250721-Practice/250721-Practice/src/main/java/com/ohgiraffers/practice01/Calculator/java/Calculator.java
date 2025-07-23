@@ -1,6 +1,4 @@
-package basic;
-
-import org.w3c.dom.ls.LSOutput;
+package com.ohgiraffers.practice01.Calculator.java;
 
 import java.util.Scanner;
 

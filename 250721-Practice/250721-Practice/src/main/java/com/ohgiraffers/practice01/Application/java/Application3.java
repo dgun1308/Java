@@ -1,4 +1,6 @@
-package basic;
+package com.ohgiraffers.practice01.Application.java;
+
+import com.ohgiraffers.practice01.Calculator.java.Calculator;
 
 import java.util.Scanner;
 
