@@ -10,7 +10,7 @@ public class MemberDTO {
     private String phone;
     private String email;
 
-    public void MemberDTO() {}
+    public MemberDTO() {}
 
 //    public void MemberDTO(String id, String pwd, String name, int age, char gender, String phone, String email) {
 //        this.id = id;

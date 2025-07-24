@@ -8,7 +8,7 @@ public class BookDTO {
     private int price;
     private double discountRate;
 
-    public void BookDTO() {}
+    public BookDTO() {}
 
 //    public void BookDTO() {
 //        this.title = title;
