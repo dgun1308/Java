@@ -26,6 +26,9 @@ public class BookManager {
 
     // books.dat 파일에서 ArrayList 객체를 읽어와 alist에 초기화
     @SuppressWarnings("unchecked")  // 형변환 경고를 무시하기 위한 어노테이션
+                                    // 컴파일러 경고를 무시하도록 설정하는 어노테이션
+                                    // 주로 제네릭 사용 시 발생하는 unchecked 경고나
+                                    // deprecated된 API 사용 시 발생하는 경고 등을 억제
     private void loadDataFromFile() {
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(FILE_PATH))) {
             // 파일에서 객체를 읽어와 ArrayList<BookDTO>로 형변환

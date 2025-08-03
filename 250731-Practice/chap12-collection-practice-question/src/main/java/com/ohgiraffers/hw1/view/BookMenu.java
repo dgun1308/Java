@@ -12,8 +12,6 @@ public class BookMenu {
     BookManager bM = new BookManager();
     Scanner sc = new Scanner(System.in);
 
-
-// BookManager가
     public BookMenu() {}
 
     public void menu() {
