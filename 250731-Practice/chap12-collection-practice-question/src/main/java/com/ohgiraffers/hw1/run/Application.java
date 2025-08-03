@@ -1,5 +1,6 @@
 package com.ohgiraffers.hw1.run;
 
+import com.ohgiraffers.hw1.controller.BookManager;
 import com.ohgiraffers.hw1.model.dto.BookDTO;
 import com.ohgiraffers.hw1.view.BookMenu;
 
@@ -10,17 +11,12 @@ public class Application {
 
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+        // BookMenu 객체 생성
+        // BookMenu 의 생성자가 호출되면서 그 안의 BookManager도 함게 생성,
+        // BookManager의 생성자가 호출되면서 파일 로딩이 단 1회 발생
+
         BookMenu bM = new BookMenu();
-        ArrayList<BookDTO> alist = new ArrayList<>();
-
+//        BookManager bMa = new BookManager();
         bM.menu();
-
-//        alist.add(new BookDTO(1, "홍길동전", "홍길동"));
-//        alist.add(new BookDTO(2, "목민심서", "정약용"));
-//        for(BookDTO book : alist) {
-//            System.out.println("book : " + book);
-//        }
-//        System.out.println(alist.get(0));
     }
 }

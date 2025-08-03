@@ -1,6 +1,13 @@
 package com.ohgiraffers.hw1.model.dto;
 
-public class BookDTO {
+import java.io.Serializable;
+
+// 직렬화 구현을 위해 Serializable 추가
+// BookDTO 객체가 파일에 쓰여질 수 있는 대상임을 자바에게 알려주는 표시
+public class BookDTO implements Serializable {
+
+    // 클래스의 버전 관리를 위한 ID
+    private static final long serialVersionUID = 1L;
 
     private int bNo;
     private int category;
